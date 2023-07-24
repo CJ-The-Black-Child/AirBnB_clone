@@ -1,0 +1,25 @@
+.filters {
+	display: flex;
+	align-items: center;
+}
+
+.filters .locations,
+.filters . amenities {
+	height: 100%
+	width: 25%
+	border-right: 1px solid #DDDDDD;
+	padding: 10px;
+}
+
+.filters .locations {
+	border-right: none;
+}
+
+.filters h3 {
+	font-weight: 600;
+}
+
+.filters h4 {
+	font-weight: 400;
+	font-size: 14px;
+}
