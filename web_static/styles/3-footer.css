@@ -1,0 +1,17 @@
+footer {
+	background-color: #00FF00;
+	height: 60px;
+	width: 100%;
+	border-top: 1px solid #CCCCCC;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+footer span {
+	font-weight: bold;
+	font-size: 18px;
+}
