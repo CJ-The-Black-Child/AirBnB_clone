@@ -1,0 +1,22 @@
+header {
+	background-color: #FF0000;
+	height: 70px;
+	width: 100%;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+header .logo {
+	margin-left: 20px;
+display: flex;
+	 align-items: center;
+color: white;
+       font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width:768px) {
+	header .logo {
+		margin-left: 10px;
+		font-size: 18px;
+	}
+}
