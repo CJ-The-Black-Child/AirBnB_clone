@@ -6,13 +6,13 @@
 	border-radius: 4px;
 	display: flex;
 	align-items: center;
-	justify-center: space-between;
+	justify-content: space-between;
 	padding: 0 20px;
 }
 
 .filters button {
 	font-size: 18px;
-	backgound-color: #FF5A5F;
+	background-color: #FF5A5F;
 	color: #FFFFFF;
 	height: 48px;
 	width: 20%;
