@@ -1,19 +1,14 @@
 header {
-	background-color: #FF0000;
+	background-color: white;
 	height: 70px;
 	width: 100%;
-       	border-bottom: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
 }
 
-header .logo {
-	margin-left: 20px;
-	display: flex;
-	align-items: center;
-}
-
-header img {
+.logo {
+	background-image: url(../images/logo.png);
+	position: absolute;
+	width: 136px;
 	height: 60px;
-width: 136px;
-position: absolute;
-left: 20px;
+	left: 20px;
 }
