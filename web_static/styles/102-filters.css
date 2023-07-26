@@ -1,31 +1,103 @@
-.filters {
-	color: white;
+container .filters {
 	height: 70px;
 	width: 100%;
 	border: 1px solid #DDDDDD;
 	border-radius: 4px;
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 0 20px;
+	align-items: stretch;
+	justify-content: center;
+	z-index: 2;
+	position: relative;
+	flex-direction: row;
+	background-color: #FFFFFF;
 }
 
-.filters button {
+.container .filters .locations {
+	width: 25%;
+	border-right: 1px solid #DDDDDD;
+}
+
+.container .filters .amenities {
+	width: 25%;
+}
+
+container .filters button {
 	font-size: 18px;
 	background-color: #FF5A5F;
-	color: #FFFFFF;
-	height: 48px;
+	height: 60%;
 	width: 20%;
 	border: none;
 	border-radius: 4px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	cursor:pointer;
-	opacity: 1;
-	transition: opacity 0.3s ease;
+	margin: auto 30px auto auto;
 }
 
-.filters button:hover {
-	opacity: 0.99;
+container .filters button:hover {
+	opacity: 0.9;
+}
+
+
+.container .filters h2 {
+	font-size: 16px;
+	margin: 10px 0 5px 0;
+}
+
+.container .filters h3 {
+	font-weight: 600;
+	margin: 12px 0 4px 40px;
+}
+
+.container .filters .locations:hover .popover {
+	display: list-item;
+}
+
+.container .filters .amenities:hover .popover {
+	display: list-item;
+}
+
+.container .filters .popover {
+	display: none;
+	list-style-type: none;
+	background-color: #FAFAFA;
+	border: 1px solid #DDDDDD;
+	border-radius: 4px;
+	padding: 30px 40px 40px 30px;
+	margin: 15px -1px 0 -1px;
+}
+
+.container .filters .popover ul {
+	list-style-type: none;
+	padding-left: 20px;
+}
+
+.container .filters .popover li {
+	margin: 5px 0 5px 0;
+}
+
+@media screen and (min-width: 1800px) {
+	.container .filters {
+		min-height: 200px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.container .filters {
+		flex-direction: column;
+		height: auto;
+	}
+
+	.container .filters .locations {
+		border-bottom: 1px solid #DDDDDD;
+	}
+
+	.container .filters .locations,
+	.container .filters .amenities {
+		width: 100%;
+		border-bottom: 1px solid #DDDDDD;
+		border-right: none;
+	}
+
+	.container .filters button {
+		width: 80%;
+		margin: 5px auto;
+	}
 }
