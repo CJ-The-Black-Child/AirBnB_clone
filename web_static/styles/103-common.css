@@ -1,8 +1,18 @@
+html {
+       position: relative;
+       min-height: 100%;
+}
+
 body {
-color: #484848;
+       color: #484848;
+       display: flex;
+       flex-direction: column;
        font-size: 14px;
        font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
        line-height: 1.5;
+       min-height: 100vh;
+       margin: 0;
+       padding: 0;
 }
 
 h1,
@@ -21,4 +31,19 @@ color: #007bff;
 }
 button {
 cursor: pointer;
+}
+
+
+div.container {
+       max-width: 80%;
+       margin: 30px auto;
+       display: flex;
+       flex-direction: column;
+       align-items: stretch;
+}
+
+@media screen and (min-width: 1800px){
+       div.container {
+              max-width: 80%;
+       }
 }
