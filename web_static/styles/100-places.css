@@ -1,9 +1,12 @@
 .places {
-	max-width: 1000px;
+	width: 1000px;
 	margin: 0px auto;
 	font-size: 30px;
 	display: flex;
-	flex-wrap: wrap;
+	align-items: flex-start;
+	z-index: 1;
+	position: relative;
+	flex-flow: row wrap;
 	justify-content: center;
 	margin-bottom: 60px;
 }

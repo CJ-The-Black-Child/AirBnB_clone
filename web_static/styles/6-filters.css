@@ -1,4 +1,4 @@
-section .filters {
+section.filters {
 	display: flex;
 	background-color: white;
 	height: 70px;
@@ -6,8 +6,8 @@ section .filters {
 	border: 1px solid #DDDDDD;
 	border-radius: 4px;
 }
-section .filters div.locations,
-section .filters div.amenities {
+section.filters div.locations,
+section.filters div.amenities {
 	height: 100%;
 	width: 25%;
 	display: flex;
@@ -34,7 +34,7 @@ div.amenities ul.popover li p {
 section.filters div.locations {
 	border-right: 1px solid #DDDDDD;
 }
-section.filter div.amenities {
+section.filters div.amenities {
 	margin-right: auto;
 }
 div.locations h3,
@@ -44,7 +44,7 @@ div.amenities h3 {
 	margin-left: 50px;
 }
 div.locations h4,
-div.locations h4 {
+div.amenities h4 {
 	margin: 4px auto;
 	margin-left: 50px;
 	margin-bottom: 16px;
@@ -54,7 +54,7 @@ div.locations h4 {
 ul.popover {
 	background-color: #FAFAFA;
 	margin-top: 0px;
-	padding-left: opx;
+	padding-left: 0px;
 	padding-bottom: 20px;
 	padding-top: 20px;
 	list-style: none;
@@ -65,20 +65,20 @@ div.locations ul,
 div.amenities ul {
 	display: none;
 }
-section .filters div.locations:hover > ui,
-section .filters div.amenities:hover > ul {
+section.filters div.locations:hover ul,
+section.filters div.amenities:hover ul {
 	display: block;
 	z-index: 999;
 }
-section .filters .locations .popover li,
-section .filters .amenities .popover li {
+section.filters .locations .popover li,
+section.filters .amenities .popover li {
 	padding: 10px;
 }
-section .filters .locations h2 {
+section.filters .locations h2 {
 	font-size: 16px;
 	margin-bottom: 10px;
 }
-section .filters button {
+section.filters button {
 	font-size: 18px;
 	background: #FF5A5F;
 	color: #FFFFFF;
@@ -88,6 +88,6 @@ section .filters button {
 	border-radius: 4px;
 	margin: auto 30px;
 }
-section .filters button:hover {
+section.filters button:hover {
 	opacity: 0.9;
 }

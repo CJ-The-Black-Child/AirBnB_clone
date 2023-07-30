@@ -8,7 +8,7 @@ header {
 	border-bottom: 1px solid #CCCCCC;
 }
 
-header .logo {
+header.logo {
 	margin-left: 20px;
 display: flex;
 	 align-items: center;
@@ -18,7 +18,7 @@ color: white;
 
 /* Responsive Design */
 @media (max-width:768px) {
-	header .logo {
+	header.logo {
 		margin-left: 10px;
 		font-size: 18px;
 	}

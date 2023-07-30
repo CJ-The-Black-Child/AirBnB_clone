@@ -1,4 +1,4 @@
-container .filters {
+.container .filters {
 	height: 70px;
 	width: 100%;
 	border: 1px solid #DDDDDD;
@@ -21,7 +21,7 @@ container .filters {
 	width: 25%;
 }
 
-container .filters button {
+.container .filters button {
 	font-size: 18px;
 	background-color: #FF5A5F;
 	height: 60%;
@@ -31,7 +31,7 @@ container .filters button {
 	margin: auto 30px auto auto;
 }
 
-container .filters button:hover {
+.container .filters button:hover {
 	opacity: 0.9;
 }
 
